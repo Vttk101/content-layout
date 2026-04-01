@@ -19,32 +19,26 @@ body {
   border-radius: 7px;
 }
 
-/* BEGIN (write your solution here) */
-.form-input * {
+/* BEGIN */
+
+.form-input > * {
+  display: block;
   width: 100%;
 }
 
-div * {
+.form-input input,
+.form-input textarea {
   box-sizing: border-box;
-}
-
-#name {
   height: 50px;
   padding: 10px 20px;
-  border: 1px solid #e2e2e2
-}
 
-#email {
-  height: 50px;
-  padding: 10px 20px;
   border: 1px solid #e2e2e2;
 }
 
-textarea {
+.form-input textarea {
   height: 200px;
-  padding: 10px 20px;
+
   resize: none;
-  border: 1px solid #e2e2e2;
 }
 
 /* END */
