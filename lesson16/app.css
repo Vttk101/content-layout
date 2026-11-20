@@ -3,18 +3,26 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-  /* BEGIN (write your solution here) */
-.karts {
+
+  /* BEGIN */
+
   width: 300px;
   height: 200px;
+<<<<<<< HEAD
   background-image: url("../assets/background.png");
   background-position: center;
   background-size: cover;
 
+=======
+
+  color: #e1bee6;
+>>>>>>> 8ce6c66de4ad551defd473792346e4762adbe914
   font-size: 24px;
   font-weight: bold;
-  color: #e1bee6;
-}
-  /* END */
 
+  background-image: url("../assets/background.png");
+  background-size: cover;
+  background-position: center;
+
+  /* END */
+}
