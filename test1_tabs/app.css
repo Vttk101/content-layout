@@ -1,5 +1,15 @@
 /* BEGIN (write your solution here) */
+@font-face {
+  font-weight: normal;
+  font-family: Raleway;
+  src: url("../assets/fonts/Raleway-Regular.ttf");
+}
 
+@font-face {
+  font-weight: bold;
+  font-family: Raleway;
+  src: url("../assets/fonts/Raleway-Bold.ttf");
+}
 /* END */
 
 body {
@@ -12,7 +22,7 @@ body {
   color: #eee;
 
   /* BEGIN (write your solution here) */
-  
+  font: 20px/1.5 sans-serif;
   /* END */
 
   background-image: linear-gradient(to right top, #222831, #282d36, #2d333b, #333841, #393e46);
@@ -42,12 +52,45 @@ h2 {
   margin: 0 auto;
 
   /* BEGIN (write your solution here) */
-  
+  column-count: 3;
+  column-gap: 0;
   /* END */
 }
 
 /* BEGIN (write your solution here) */
+.tabs-content {
+column-span: all;
+}
 
+.tabs-content-item {
+column-count: 3;
+column-gap: 30px;
+}
+
+.tab-name {
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #00adb5;
+}
+.tab-name:hover{
+  border-bottom: 3px solid #5ffbf1;
+}
+.tabs-content-item {
+  display: none;
+}
+[data-tab="html"]:hover ~ .tabs-content > [data-tab-content="html"]{
+  display: block;
+  padding: 20px;
+}
+[data-tab="css"]:hover ~ .tabs-content > [data-tab-content="css"]{
+  display: block;
+  padding: 20px;
+}
+[data-tab="js"]:hover ~ .tabs-content > [data-tab-content="js"]{
+  display: block;
+  padding: 20px;
+}
 
 /* END */
 
